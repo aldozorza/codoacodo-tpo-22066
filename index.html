@@ -12,20 +12,20 @@
         integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Inter, Raleway, Poppins, Montserrat, Open Sans, Mulish -->
-    <!-- Hind Siliguri, Assistant, Maven Pro -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <title>ZylArq - Arquitectura y Diseño</title>
 </head>
 
 <body>
 
-    <div class="cantainer">
+    <div id="main-top" class="container-main">
 
+        <!-- ***** HEADER (HOME) ***** -->
         <div class="main">
             <div class="fondo-transparente">
                 <header class="header">
@@ -39,60 +39,206 @@
 
                     <div class="container-header">
                         <div class="logo">
-                            ZylArq
+                            <a href="index.html">ZylArq</a>
                         </div>
                         <nav class="menu">
-                            <ul>
-                                <li>Home</li>
-                                <li>Nosotros</li>
-                                <li>Servicios</li>
-                                <li>Proyectos</li>
-                                <li>Blog</li>
-                                <li>Contacto</li>
+                            <ul class="menu-li">
+                                <!-- <li><a href="index.html">Home</a></li> -->
+                                <li><a href="#nosotros">Nosotros</a></li>
+                                <li><a href="#servicios">Servicios</a></li>
+                                <li><a href="#proyectos">Proyectos</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
                             </ul>
                         </nav>
-                        <div>
-                            <i class="icono fa-brands fa-instagram"></i>
-                            <i class="icono fa-brands fa-twitter"></i>
-                            <i class="icono fa-solid fa-envelope"></i>
+                        <div class="iconos-social">
+                            <a href="https://www.instagram.com/"><i class="icono fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/iniciarsesion?lang=es"><i
+                                    class="icono fa-brands fa-twitter"></i></a>
+                            <!-- <a href="#"><i class="icono fa-solid fa-envelope"></i></a> -->
                         </div>
                     </div>
 
                     <div class="titulo-central">
-                        <div>
-                            <p class="text-arq-int">Arquitectura / Interior</p>
-                            <p>Somos expertos en construccipon</p>
-                        </div>
-                        <button class="btn-proyectos">Nuestros proyectos</button>
+                        <p class="text-arq-int">Arquitectura</p>
+                        <p>Expertos en construcción</p>
+                        <button class="btn-proyectos"><a href="#proyectos">NUESTROS PROYECTOS</a></button>
                     </div>
 
                 </header>
             </div>
         </div>
+        <!-- ***** FIN HEADER (HOME) ***** -->
 
-        <!-- <section class="nosotros">
 
+        <!-- ***** QUIENES SOMOS ***** -->
+        <section id="nosotros" class="main-nosotros">
+            <a href="#main-top" class="ancla-subir"><i class="fa-solid fa-angle-up"></i></a>
+            <div class="container-nos">
+                <div class="texto-nos">
+                    <h5 class="txt-qsomos">QUIENES SOMOS</h5>
+                    <h2 class="txt-estArq">ESTUDIO DE ARQUITECTURA</h2>
+                    <h3 class="txt-prologo">Un equipo de diseño y desarrollo galardonado que está orgulloso de nuestro
+                        trabajo.</h3>
+                    <p class="txt-narrativo">Usamos un enfoque ágil para probar suposiciones y conectarnos con las
+                        necesidades de su
+                        audiencia
+                        de manera temprana y frecuente. La tecnología permite grandes experiencias. Nos gusta y
+                        usamos
+                        la tecnología pero nos hemos esforzado por no enamorarnos de ella.</p>
+                </div>
+                <img class="img-nos-izq" src="img/35-bn-2.jpg" alt="foto interior">
+                <img class="img-nos-der" src="img/36-2.jpg" alt="foto interior">
+            </div>
         </section>
-        
-        <section class="servicios">
+        <!-- ***** FIN QUIENES SOMOS ***** -->
 
+
+        <!-- ***** QUE HACEMOS ***** -->
+        <section id="servicios" class="main-servicios">
+            <a href="#main-top" class="ancla-subir"><i class="fa-solid fa-angle-up"></i></a>
+            <div class="container-srv">
+                <div class="grid-serv">
+                    <div class="srv-area-tit">
+                        <h5 class="txt-qhacemos">QUÉ HACEMOS</h5>
+                        <h2 class="txt-briMejSrv">BRINDAR LOS MEJORES SERVICIOS</h2>
+                    </div>
+                    <div class="srv-area-arq sq-srv sq-arquitectura">
+                        <i class="fa-solid fa-building ico-srv"></i>
+                        <h3 class="srv-h3">ARQUITECTURA</h3>
+                        <p>Trabajamos con materiales y técnicas sustentables. Brindamos soluciones integrales. Viviendas y complejos. Soluciones integrales</p>
+                    </div>
+                    <div class="srv-area-int sq-srv sq-disenioInt">
+                        <i class="fa-brands fa-gitter ico-srv"></i>
+                        <h3 class="srv-h3">DISEÑO INTERIOR</h3>
+                        <p>Asesoramiento, diseño, dirección y ejecución de proyectos de interiorismo</p>
+                    </div>
+                    <div class="srv-area-dis sq-srv sq-disenioMuebles">
+                        <i class="fa-solid fa-couch ico-srv"></i>
+                        <h3 class="srv-h3">DISEÑO MOBILIARIO</h3>
+                        <p>Asesoramiento integral en decoración y ambientación de tu hogar. Creamos armónicos y atemporales que reflejan tu personalidad</p>
+                    </div>
+                    <div class="srv-area-con sq-srv sq-consultora">
+                        <i class="fa-solid fa-headphones-simple ico-srv"></i>
+                        <h3 class="srv-h3">CONSULTORIA</h3>
+                        <p>Nuestro equipo de arquitectos asesora y ayuda a impulsar sus proyectos de arquitectura, logrando a formalizar en proyectos de construcción y arquitectura sus ideas</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        
-        <section class="proyectos">
+        <!-- ***** FIN QUÉ HACEMOS ***** -->
 
+
+        <!-- ***** PROYECTOS ***** -->
+        <section id="proyectos" class="main-proyectos">
+            <!-- Imagen 1 -->
+            <div class="img-proy-izq">
+                <!-- Fondo opaco -->
+                <div class="fondo-proy">
+                    <!-- Texto -->
+                    <div class="img-proy-txt">
+                        <p>Edificios</p>
+                        <p>Proyectos</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="img-proy-medio">
+                <!-- Fondo opaco -->
+                <div class="fondo-proy">
+                    <!-- Texto -->
+                    <div class="img-proy-txt">
+                        <p>Diseño de muebles</p>
+                        <p>Proyectos</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="img-proy-der">
+                <!-- Fondo opaco -->
+                <div class="fondo-proy">
+                    <!-- Texto -->
+                    <div class="img-proy-txt">
+                        <p>Nuestros interiores</p>
+                        <p>Proyectos</p>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- ***** FIN PROYECTOS ***** -->
 
-        <section class="blog">
 
+        <!-- ***** BLOG ***** -->
+        <section id="blog" class="main-blog">
+            <a href="#main-top" class="ancla-subir"><i class="fa-solid fa-angle-up"></i></a>
+            <div class="container-blog">
+                <!-- Títulos -->
+                <h5 class="txt-blog">BLOG</h5>
+                <h2 class="txt-noticias">NOTICIAS DE ARQUITECTURA</h2>
+                <!-- Contenedor de Cards -->
+                <div class="container-cards-blog">
+                    <!-- Card 1 -->
+                    <div class="card-blog">
+                        <div class="card-img card-izq"></div>
+                        <h4 class="txt-titblog">PUERTAS ADENTRO</h4>
+                        <h6 class="txt-fecha">MAY 15, 2022</h6>
+                        <p class="txt-news-blog">Sol Palou nos muestra cómo su casa convive con el paisaje.</p>
+                        <div><a href="" class="txt-leerMas">Leer más...</a></div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card-blog">
+                        <div class="card-img card-medio"></div>
+                        <h4 class="txt-titblog">SIN LIMITES</h4>
+                        <h6 class="txt-fecha">MAY 22, 2022</h6>
+                        <p class="txt-news-blog">Una casa con espacios integrados, pero bien definidos, que se unen a una galería increíble.</p>
+                        <div><a href="" class="txt-leerMas">Leer más...</a></div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card-blog">
+                        <div class="card-img card-der"></div>
+                        <h4 class="txt-titblog">OBRA PROPIA</h4>
+                        <h6 class="txt-fecha">MAY 22, 2022</h6>
+                        <p class="txt-news-blog">Una arquitecta construyó y ambientó la casa ideal para vivir en familia.</p>
+                        <div><a href="" class="txt-leerMas">Leer más...</a></div>
+                    </div>
+                </div>
+                <!-- Fin contenedor de Cards -->
+
+            </div>
         </section>
+        <!-- ***** FIN BLOG ***** -->
 
+
+        <!-- ***** TRABAJAREMOS JUNTOS (CONTACTO) ***** -->
         <section class="contacto">
-
+            <div class="fondo-contacto">
+                <div class="container-contacto">
+                    <h2 class="txt-titContacto">TRABAJEMOS JUNTOS</h2>
+                    <p class="txt-contacto">Háganos saber qué es lo que busca. Escucharemos sus ideas y trabajaremos
+                        juntos, asesorándolo desde nuestra vasta experiencia para que esto sea el comienzo de un
+                        importante proyecto.</p>
+                    <button class="btn-contacto"><a href="contacto.html">CONTÁCTENOS</a></button>
+                </div>
+            </div>
         </section>
-        
-        <footer class="footer">
+        <!-- ***** FIN TRABAJAREMOS JUNTOS (CONTACTO) ***** -->
 
-        </footer> -->
+        <!-- ***** FOOTER ***** -->
+        <footer class="container-footer">
+            <div class="footer">
+                <small class="txt-disenio"><a href="https://www.buenosaires.gob.ar/educacion/codo-codo">Diseñado por
+                        Codo a Codo</a></small>
+                <small><a href="#main-top">IR ARRIBA <i class="fa-solid fa-angle-up"></i></a></small>
+                <div>
+                    <small><i class="fa-solid fa-phone"></i></small>
+                    <small>(054) 11.5555.1234</small>
+                </div>
+            </div>
+        </footer>
     </div>
 
 
